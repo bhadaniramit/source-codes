@@ -1,0 +1,13 @@
+Step 1 :  goto terminal
+        put git-completion.bash script in your home directory
+curl https://raw.githubusercontent.com/git... -o ~/.git-completion.bash
+
+
+Step 2 : Add following line to your .bash_profile. 
+       This tells bash to run git autocomplete script if it exists
+
+vi ~/.bash_profile
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
